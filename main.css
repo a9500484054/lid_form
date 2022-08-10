@@ -455,6 +455,11 @@ input[type=radio].visually-hidden {
   background-repeat: no-repeat;
   box-sizing: 100%;
 }
+.banner__wrap {
+  margin: 0 auto;
+  max-width: 380px;
+  padding: 0 15px;
+}
 .banner__title {
   max-width: 200px;
   margin-bottom: 17px;
@@ -480,11 +485,14 @@ input[type=radio].visually-hidden {
   background-image: url("../images/png/vtop3-banner-insta-cat.png");
   background-repeat: no-repeat;
   background-position-y: inherit;
-  background-position-x: right;
+  background-position-x: 90%;
   background-size: 95px;
 }
 
 @media (min-width: 768px) {
+  .banner__wrap {
+    max-width: 500px;
+  }
   .banner__title {
     max-width: 400px;
     font-size: 36px;
@@ -498,12 +506,14 @@ input[type=radio].visually-hidden {
   }
 }
 @media (min-width: 1200px) {
+  .banner__wrap {
+    max-width: 600px;
+  }
   .banner__title {
     font-size: 48px;
     line-height: 56px;
   }
   .cat {
-    background-position-x: center;
     background-position-y: -6px;
     background-size: 126px;
   }
